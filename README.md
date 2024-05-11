@@ -38,7 +38,7 @@
 
 Yi-1.5 is an upgraded version of Yi. It is continuously pre-trained on Yi with a high-quality corpus of 500B tokens and fine-tuned on 3M diverse fine-tuning samples. 
 
-Compared with Yi, Yi-1.5 achieves stronger performance in coding, math, reasoning, and instruction following, while still maintaining excellent capabilities in language understanding, commonsense reasoning, and reading comprehension. 
+Compared with Yi, Yi-1.5 delivers stronger performance in coding, math, reasoning, and instruction-following capability, while still maintaining excellent capabilities in language understanding, commonsense reasoning, and reading comprehension. 
 
 Yi-1.5 comes in 3 model sizes: 34B, 9B, and 6B. For model details and benchmarks, see [Model Card](TBD).
 
