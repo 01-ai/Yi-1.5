@@ -154,7 +154,9 @@ You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Firefly]
 
 ## API
 
-Yi models are deployed on [Yi Platform](https://platform.lingyiwanwu.com/), [Replicate](https://replicate.com/search?query=01+ai), and [OpenRouter](https://openrouter.ai/models?q=01%20ai). 
+Yi APIs are OpenAI-compatible and provided at [Yi Platform](https://platform.lingyiwanwu.com/). Sign up to get free tokens, and you can also pay-as-you-go at a competitive price.
+
+Additionally, Yi APIs are also deployed on [Replicate](https://replicate.com/search?query=01+ai) and [OpenRouter](https://openrouter.ai/models?q=01%20ai). 
 
 ## License
 
