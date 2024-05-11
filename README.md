@@ -7,43 +7,61 @@
 </div>
 
 <br/>
-<br/>
 
 <p align="center">
-  <a href="https://github.com/01-ai">🤗 Hugging Face</a> •
+  <a href="https://github.com/01-ai">🤗 HuggingFace</a> •
+  <a href="https://www.modelscope.cn/organization/01ai/">🤖 ModelScope</a> •
+  <a href="https://wisemodel.cn/organization/01.AI">✡️ WiseModel</a> 
+  <br/>
+  <a href="https://github.com/01-ai/Yi-1.5">🐙 GitHub</a> •
   <a href="https://discord.gg/hYUwWddeAu">👾 Discord</a> •
   <a href="https://twitter.com/01ai_yi">🐤 Twitter</a> •
-  <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245">💬 WeChat</a> •
-  <a href="https://arxiv.org/abs/2403.04652">📝 Paper</a>
+  <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245">💬 WeChat</a> 
+  <br/>
+  <a href="https://arxiv.org/abs/2403.04652">📝 Paper</a> •
+  <a href="https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#faq">🙌 FAQ</a> •
+  <a href="https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#learning-hub">📗 Learning Hub</a>
 </p>
 
-# ToC
+---
 
-- [Quick start](#quick-start]
-- []
+- [Intro](#intro)
+- [News](#news)
+- [Quick Start](#quick-start)
+- [Web](#web-demo)
+- [Deployment](#deployment)
+- [Fine-tuning](#fine-tuning)
+- [API](#api)
+- [License](#license)
 
-# Quick start
+# Intro
 
-This tutorial guides you through every step of running **Yi-1.5-34B-Chat locally on an A800 (80G)** and then performing inference.
- 
-## Prerequisites
+Yi-1.5 is an upgraded version of Yi. It is continuously pre-trained on Yi with a high-quality corpus of 500B tokens and fine-tuned on 3M diverse fine-tuning samples. 
+
+Compared with Yi, Yi-1.5 achieves stronger performance in coding, math, reasoning, and instruction following, while still maintaining excellent capabilities in language understanding, commonsense reasoning, and reading comprehension. 
+
+For details of model and benchmarks, see [Model Card]().
+
+# News
+
+- 2024-05-13: The Yi-1.5 series models is open-sourced.
+
+# Requirements
 
 - Make sure Python 3.10 or a later version is installed.
 
 - Set up the environment and install the required packages.
 
   ```bash
-  git clone https://github.com/01-ai/Yi.git
-  cd yi
   pip install -r requirements.txt
   ```
   
 - Download the Yi-1.5 model from [Hugging Face](https://huggingface.co/01-ai), [ModelScope](https://www.modelscope.cn/organization/01ai/), or [WiseModel](https://wisemodel.cn/organization/01.AI).
 
-## Inference
+# Quick Start
 
-- chat models
-
+This tutorial runs Yi-1.5-34B-Chat locally on an A800 (80G).
+ 
   ```python
   from transformers import AutoModelForCausalLM, AutoTokenizer
   
@@ -71,90 +89,19 @@ This tutorial guides you through every step of running **Yi-1.5-34B-Chat locally
   print(response)
   ```
 
-## Base model
-
-- Perform inference with Yi-1.5 base model
-
-  The steps are similar to that of chat.
-
-  You can use the existing file [`text_generation.py`](tbd).
-
-  ```bash
-  python demo/text_generation.py  --model <your-model-path>
-  ```
-
-  Then you can see an output similar to the one below. 🥳
-
-  <details>
-
-  <summary>Output. ⬇️ </summary>
-
-  <br>
-
-  **Prompt**: Let me tell you an interesting story about cat Tom and mouse Jerry,
-
-  **Generation**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone, I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
-
-  </details>
-
-- Yi-9B
-  
-  Input
-
-  ```bash
-  from transformers import AutoModelForCausalLM, AutoTokenizer
-
-  MODEL_DIR = "01-ai/Yi-9B"
-  model = AutoModelForCausalLM.from_pretrained(MODEL_DIR, torch_dtype="auto")
-  tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR, use_fast=False)
-
-  input_text = "# write the quick sort algorithm"
-  inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
-  outputs = model.generate(**inputs, max_length=256)
-  print(tokenizer.decode(outputs[0], skip_special_tokens=True))
-  ```
-
-  Output
-
-  ```bash
-  # write the quick sort algorithm
-  def quick_sort(arr):
-      if len(arr) <= 1:
-          return arr
-      pivot = arr[len(arr) // 2]
-      left = [x for x in arr if x < pivot]
-      middle = [x for x in arr if x == pivot]
-      right = [x for x in arr if x > pivot]
-      return quick_sort(left) + middle + quick_sort(right)
-
-  # test the quick sort algorithm
-  print(quick_sort([3, 6, 8, 10, 1, 2, 1]))
-  ```
-
-
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
-
-ollama steps?
-
 # Deployment
 
-If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
-
-# Inference
+Prerequisites: Before deploying Yi-1.5 models, make sure you meet the [software and hardware requirements](https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#software-requirements). 
 
 ## vLLM
 
-Prerequisites: 
-
-We advise you to use vLLM>=0.3.0 to build OpenAI-compatible API service. 
+Prerequisites: Download the lastest version of [vLLm](https://docs.vllm.ai/en/latest/getting_started/installation.html).
 
 1. Start the server with a chat model.
 
-```bash
-python -m vllm.entrypoints.openai.api_server  --model 01-ai/Yi-1.5-9B-Chat  --served-model-name Yi-1.5-9B-Chat
-```
+    ```bash
+    python -m vllm.entrypoints.openai.api_server  --model 01-ai/Yi-1.5-9B-Chat  --served-model-name Yi-1.5-9B-Chat
+    ```
 
 2. Use the chat API.
 
@@ -195,27 +142,24 @@ python -m vllm.entrypoints.openai.api_server  --model 01-ai/Yi-1.5-9B-Chat  --se
     print("Chat response:", chat_response)
     ```
 
-## llama.cpp
+## Web Demo
 
-# Web Demo
+```
+python demo/web_demo.py -c <your-model-path>
+```
 
-# FAQ
-
-- Quantization: It is recommended to use AWQ, GPTQ, and GGUF to quantize Yi-1.5 models.
+# Fine-tuning
   
-- Fine-tuning: It is recommended to use [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory) to fine-tune Yi-1.5 models with SFT, DPO, PPO, etc.
+You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Firefly](https://github.com/yangjianxin1/Firefly), and [Swift](https://github.com/modelscope/swift) to fine-tune your models.
 
-We advise you to use training frameworks, including Axolotl, Llama-Factory, Swift, etc., to finetune your models with SFT, DPO, PPO, etc.
+# API
 
-# Misc.
+Yi models are deployed on [Yi Platform](https://platform.lingyiwanwu.com/), [Replicate](https://replicate.com/search?query=01+ai), and [OpenRouter](https://openrouter.ai/models?q=01%20ai). 
 
-- Contributors: [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
+# License
 
-- License: The source code in this repo is licensed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi-1.5 series models are fully open for academic research and free for commercial use.
+The source code in this repo is licensed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models are fully open for academic research and free for commercial use.
 
-
-
-
-
-
-
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
