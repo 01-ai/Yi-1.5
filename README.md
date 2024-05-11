@@ -95,7 +95,7 @@ Prerequisites: Before deploying Yi-1.5 models, make sure you meet the [software 
 
 ### vLLM
 
-Prerequisites: Download the lastest version of [vLLm](https://docs.vllm.ai/en/latest/getting_started/installation.html).
+Prerequisites: Download the lastest version of [vLLM](https://docs.vllm.ai/en/latest/getting_started/installation.html).
 
 1. Start the server with a chat model.
 
