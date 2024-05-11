@@ -44,7 +44,7 @@ Yi-1.5 comes in 3 model sizes: 34B, 9B, and 6B. For model details and benchmarks
 
 ## News
 
-- 2024-05-13: The Yi-1.5 series models are open-sourced, further improved coding, math, and overall performance
+- 2024-05-13: The Yi-1.5 series models are open-sourced, further improving coding, math, reasoning, and instruction-following abilities. 
 
 ## Requirements
 
