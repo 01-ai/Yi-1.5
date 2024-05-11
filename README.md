@@ -95,7 +95,7 @@ Prerequisites: Before deploying Yi-1.5 models, make sure you meet the [software 
 
 ### vLLM
 
-Prerequisites: Download the lastest version of [vLLm](https://docs.vllm.ai/en/latest/getting_started/installation.html).
+Prerequisites: Download the lastest version of [vLLM](https://docs.vllm.ai/en/latest/getting_started/installation.html).
 
 1. Start the server with a chat model.
 
@@ -150,7 +150,7 @@ python demo/web_demo.py -c <your-model-path>
 
 ## Fine-tuning
   
-You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Firefly](https://github.com/yangjianxin1/Firefly), and [Swift](https://github.com/modelscope/swift) to fine-tune your models.
+You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Swift](https://github.com/modelscope/swift), [XTuner](https://github.com/InternLM/xtuner), and [Firefly](https://github.com/yangjianxin1/Firefly) for fine-tuning. These frameworks all support fine-tuning the Yi series models.
 
 ## API
 
