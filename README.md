@@ -17,11 +17,16 @@
   <a href="https://arxiv.org/abs/2403.04652">📝 Paper</a>
 </p>
 
+# ToC
+
+- [Quick start](#quick-start]
+- []
+
 # Quick start
 
 This tutorial guides you through every step of running **Yi-1.5-34B-Chat locally on an A800 (80G)** and then performing inference.
  
-Prerequisites: 
+## Prerequisites
 
 - Make sure Python 3.10 or a later version is installed.
 
@@ -32,14 +37,12 @@ Prerequisites:
   cd yi
   pip install -r requirements.txt
   ```
-
+  
 - Download the Yi-1.5 model from [Hugging Face](https://huggingface.co/01-ai), [ModelScope](https://www.modelscope.cn/organization/01ai/), or [WiseModel](https://wisemodel.cn/organization/01.AI).
 
-## Chat models
+## Inference
 
-Perform inference with Yi-1.5 chat models as below.
-
-1. Create a file named  `quick_start.py` and copy the following content to it.
+- chat models
 
   ```python
   from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -66,18 +69,6 @@ Perform inference with Yi-1.5 chat models as below.
   
   # Model response: "Hello! How can I assist you today?"
   print(response)
-  ```
-
- 2. Run `quick_start.py`.
-
-  ```bash
-  python quick_start.py
-  ```
-
-  Then you can see an output similar to the one below. 🥳
-
-  ```bash
-  Hello! How can I assist you today?
   ```
 
 ## Base model
@@ -149,6 +140,8 @@ ollama steps?
 
 # Deployment
 
+If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
+
 # Inference
 
 ## vLLM
@@ -214,8 +207,11 @@ python -m vllm.entrypoints.openai.api_server  --model 01-ai/Yi-1.5-9B-Chat  --se
 
 We advise you to use training frameworks, including Axolotl, Llama-Factory, Swift, etc., to finetune your models with SFT, DPO, PPO, etc.
 
+# Misc.
 
+- Contributors: [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
+- License: The source code in this repo is licensed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi-1.5 series models are fully open for academic research and free for commercial use.
 
 
 
