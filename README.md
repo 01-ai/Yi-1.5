@@ -28,7 +28,7 @@
 - [Intro](#intro)
 - [News](#news)
 - [Quick Start](#quick-start)
-- [Web](#web-demo)
+- [Web Demo](#web-demo)
 - [Deployment](#deployment)
 - [Fine-tuning](#fine-tuning)
 - [API](#api)
