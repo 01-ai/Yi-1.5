@@ -40,7 +40,7 @@ Yi-1.5 is an upgraded version of Yi. It is continuously pre-trained on Yi with a
 
 Compared with Yi, Yi-1.5 achieves stronger performance in coding, math, reasoning, and instruction following, while still maintaining excellent capabilities in language understanding, commonsense reasoning, and reading comprehension. 
 
-For details of model and benchmarks, see [Model Card]().
+Yi-1.5 comes in 3 model sizes: 34B, 9B, and 6B. For model details and benchmarks, see [Model Card](TBD).
 
 ## News
 
