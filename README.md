@@ -34,7 +34,7 @@
 - [API](#api)
 - [License](#license)
 
-# Intro
+## Intro
 
 Yi-1.5 is an upgraded version of Yi. It is continuously pre-trained on Yi with a high-quality corpus of 500B tokens and fine-tuned on 3M diverse fine-tuning samples. 
 
@@ -42,11 +42,11 @@ Compared with Yi, Yi-1.5 achieves stronger performance in coding, math, reasonin
 
 For details of model and benchmarks, see [Model Card]().
 
-# News
+## News
 
 - 2024-05-13: The Yi-1.5 series models is open-sourced.
 
-# Requirements
+## Requirements
 
 - Make sure Python 3.10 or a later version is installed.
 
@@ -58,7 +58,7 @@ For details of model and benchmarks, see [Model Card]().
   
 - Download the Yi-1.5 model from [Hugging Face](https://huggingface.co/01-ai), [ModelScope](https://www.modelscope.cn/organization/01ai/), or [WiseModel](https://wisemodel.cn/organization/01.AI).
 
-# Quick Start
+## Quick Start
 
 This tutorial runs Yi-1.5-34B-Chat locally on an A800 (80G).
  
@@ -89,11 +89,11 @@ This tutorial runs Yi-1.5-34B-Chat locally on an A800 (80G).
   print(response)
   ```
 
-# Deployment
+## Deployment
 
 Prerequisites: Before deploying Yi-1.5 models, make sure you meet the [software and hardware requirements](https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#software-requirements). 
 
-## vLLM
+### vLLM
 
 Prerequisites: Download the lastest version of [vLLm](https://docs.vllm.ai/en/latest/getting_started/installation.html).
 
@@ -148,15 +148,15 @@ Prerequisites: Download the lastest version of [vLLm](https://docs.vllm.ai/en/la
 python demo/web_demo.py -c <your-model-path>
 ```
 
-# Fine-tuning
+## Fine-tuning
   
 You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Firefly](https://github.com/yangjianxin1/Firefly), and [Swift](https://github.com/modelscope/swift) to fine-tune your models.
 
-# API
+## API
 
 Yi models are deployed on [Yi Platform](https://platform.lingyiwanwu.com/), [Replicate](https://replicate.com/search?query=01+ai), and [OpenRouter](https://openrouter.ai/models?q=01%20ai). 
 
-# License
+## License
 
 The source code in this repo is licensed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models are fully open for academic research and free for commercial use.
 
