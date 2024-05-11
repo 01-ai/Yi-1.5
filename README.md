@@ -150,7 +150,7 @@ python demo/web_demo.py -c <your-model-path>
 
 ## Fine-tuning
   
-You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Swift](https://github.com/modelscope/swift), [XTuner](https://github.com/InternLM/xtuner), and [Firefly](https://github.com/yangjianxin1/Firefly)to fine-tune your models.
+You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Swift](https://github.com/modelscope/swift), [XTuner](https://github.com/InternLM/xtuner), and [Firefly](https://github.com/yangjianxin1/Firefly) for fine-tuning. These frameworks all support fine-tuning the Yi series models.
 
 ## API
 
