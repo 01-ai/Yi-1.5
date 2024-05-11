@@ -9,7 +9,7 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/01-ai">🤗 HuggingFace</a> •
+  <a href="https://huggingface.co/01-ai">🤗 HuggingFace</a> •
   <a href="https://www.modelscope.cn/organization/01ai/">🤖 ModelScope</a> •
   <a href="https://wisemodel.cn/organization/01.AI">✡️ WiseModel</a> 
   <br/>
@@ -28,7 +28,7 @@
 - [Intro](#intro)
 - [News](#news)
 - [Quick Start](#quick-start)
-- [Web](#web-demo)
+- [Web Demo](#web-demo)
 - [Deployment](#deployment)
 - [Fine-tuning](#fine-tuning)
 - [API](#api)
@@ -38,13 +38,13 @@
 
 Yi-1.5 is an upgraded version of Yi. It is continuously pre-trained on Yi with a high-quality corpus of 500B tokens and fine-tuned on 3M diverse fine-tuning samples. 
 
-Compared with Yi, Yi-1.5 achieves stronger performance in coding, math, reasoning, and instruction following, while still maintaining excellent capabilities in language understanding, commonsense reasoning, and reading comprehension. 
+Compared with Yi, Yi-1.5 delivers stronger performance in coding, math, reasoning, and instruction-following capability, while still maintaining excellent capabilities in language understanding, commonsense reasoning, and reading comprehension. 
 
-Yi-1.5 comes in 3 model sizes: 34B, 9B, and 6B. For model details and benchmarks, see [Model Card](TBD).
+Yi-1.5 comes in 3 model sizes: 34B, 9B, and 6B. For model details and benchmarks, see [Model Card](https://huggingface.co/collections/01-ai/yi-15-2024-05-663f3ecab5f815a3eaca7ca8).
 
 ## News
 
-- 2024-05-13: The Yi-1.5 series models is open-sourced.
+- 2024-05-13: The Yi-1.5 series models are open-sourced, further improving coding, math, reasoning, and instruction-following abilities. 
 
 ## Requirements
 
@@ -154,13 +154,11 @@ You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Swift](h
 
 ## API
 
-Yi APIs are OpenAI-compatible and provided at [Yi Platform](https://platform.lingyiwanwu.com/). Sign up to get free tokens, and you can also pay-as-you-go at a competitive price.
-
-Additionally, Yi APIs are also deployed on [Replicate](https://replicate.com/search?query=01+ai) and [OpenRouter](https://openrouter.ai/models?q=01%20ai). 
+Yi APIs are OpenAI-compatible and provided at [Yi Platform](https://platform.lingyiwanwu.com/). Sign up to get free tokens, and you can also pay-as-you-go at a competitive price. Additionally, Yi APIs are also deployed on [Replicate](https://replicate.com/search?query=01+ai) and [OpenRouter](https://openrouter.ai/models?q=01%20ai). 
 
 ## License
 
-The source code in this repo is licensed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models are fully open for academic research and free for commercial use.
+The code and weights of the Yi-1.5 series models are distributed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE).
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
