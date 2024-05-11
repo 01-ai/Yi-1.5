@@ -158,7 +158,7 @@ Yi APIs are OpenAI-compatible and provided at [Yi Platform](https://platform.lin
 
 ## License
 
-The source code in this repo is licensed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models are fully open for academic research and free for commercial use.
+The code and weights of the Yi-1.5 series models are distributed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE).
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
