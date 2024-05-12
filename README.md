@@ -13,10 +13,9 @@
   <a href="https://www.modelscope.cn/organization/01ai/">🤖 ModelScope</a> •
   <a href="https://wisemodel.cn/organization/01.AI">✡️ WiseModel</a> 
   <br/>
-  <a href="https://github.com/01-ai/Yi-1.5">🐙 GitHub</a> •
   <a href="https://discord.gg/hYUwWddeAu">👾 Discord</a> •
   <a href="https://twitter.com/01ai_yi">🐤 Twitter</a> •
-  <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245">💬 WeChat</a> 
+  <a href="https://github.com/01-ai/Yi-1.5/issues/2">💬 WeChat</a> 
   <br/>
   <a href="https://arxiv.org/abs/2403.04652">📝 Paper</a> •
   <a href="https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#faq">🙌 FAQ</a> •
