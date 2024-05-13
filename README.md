@@ -143,6 +143,9 @@ Prerequisites: Download the lastest version of [vLLM](https://docs.vllm.ai/en/la
 
 ## Web Demo
 
+We have deployed a [Yi-1.5-34B-Chat Space](https://huggingface.co/spaces/01-ai/Yi-1.5-34B-Chat) on Huggingface.
+
+Or you can build it locally by yourself, as follows:
 ```
 python demo/web_demo.py -c <your-model-path>
 ```
