@@ -18,7 +18,7 @@
   <a href="https://github.com/01-ai/Yi-1.5/issues/2">💬 WeChat</a> 
   <br/>
   <a href="https://arxiv.org/abs/2403.04652">📝 Paper</a> •
-  <a href="https://01-ai.github.io/">💪 Blog</a> •
+  <a href="https://01-ai.github.io/">💪 Tech Blog</a> •
   <a href="https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#faq">🙌 FAQ</a> •
   <a href="https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#learning-hub">📗 Learning Hub</a>
 </p>
