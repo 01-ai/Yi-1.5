@@ -89,6 +89,20 @@ This tutorial runs Yi-1.5-34B-Chat locally on an A800 (80G).
   print(response)
   ```
 
+In addition, you can also use [Ollama](https://github.com/ollama/ollama) to quickly launch the Yi-1.5 series model locally.
+
+```python
+# 1. Install ollama based on your OS. Then start the ollama service as follows:
+ollama serve
+
+# 2. Keep the above service running, then pull checkpoints and run the model:
+ollama run yi:v1.5 # more models see (https://ollama.com/library/yi/tags)
+```
+For more details, please refer to the [ollama documentation](https://github.com/ollama/ollama/tree/main/docs). For example, uploading your own model, REST API, and OpenAI API, etc.
+
+
+
+
 ## Deployment
 
 Prerequisites: Before deploying Yi-1.5 models, make sure you meet the [software and hardware requirements](https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#software-requirements). 
