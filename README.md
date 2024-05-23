@@ -18,6 +18,7 @@
   <a href="https://github.com/01-ai/Yi-1.5/issues/2">💬 WeChat</a> 
   <br/>
   <a href="https://arxiv.org/abs/2403.04652">📝 Paper</a> •
+  <a href="https://01-ai.github.io/">💪 Blog</a> •
   <a href="https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#faq">🙌 FAQ</a> •
   <a href="https://github.com/01-ai/Yi/tree/main?tab=readme-ov-file#learning-hub">📗 Learning Hub</a>
 </p>
@@ -60,7 +61,7 @@ Yi-1.5 comes in 3 model sizes: 34B, 9B, and 6B. For model details and benchmarks
 ## Quick Start
 
 This tutorial runs Yi-1.5-34B-Chat locally on an A800 (80G).
- 
+
   ```python
   from transformers import AutoModelForCausalLM, AutoTokenizer
   
@@ -151,7 +152,7 @@ python demo/web_demo.py -c <your-model-path>
 ```
 
 ## Fine-tuning
-  
+
 You can use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [Swift](https://github.com/modelscope/swift), [XTuner](https://github.com/InternLM/xtuner), and [Firefly](https://github.com/yangjianxin1/Firefly) for fine-tuning. These frameworks all support fine-tuning the Yi series models.
 
 ## API
