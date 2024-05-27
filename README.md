@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://huggingface.co/01-ai">🤗 HuggingFace</a> •
   <a href="https://www.modelscope.cn/organization/01ai/">🤖 ModelScope</a> •
-  <a href="https://wisemodel.cn/organization/01.AI">✡️ WiseModel</a> 
+  <a href="https://wisemodel.cn/organization/01.AI">🟣 wisemodel</a> 
   <br/>
   <a href="https://discord.gg/hYUwWddeAu">👾 Discord</a> •
   <a href="https://twitter.com/01ai_yi">🐤 Twitter</a> •
