@@ -158,7 +158,7 @@ Prerequisites: Download the latest version of [vLLM](https://docs.vllm.ai/en/lat
 
 ## Web Demo
 
-We have deployed a [Yi-1.5-34B-Chat Space](https://huggingface.co/spaces/01-ai/Yi-1.5-34B-Chat) on Huggingface.
+You can activate Yi-1.5-34B-Chat through the [huggingface chat ui](https://huggingface.co/chat/settings/01-ai/Yi-1.5-34B-Chat/) then experience it.
 
 Or you can build it locally by yourself, as follows:
 ```
