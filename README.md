@@ -103,7 +103,7 @@ You can run Yi-1.5 models on Ollama locally.
     ```
 
 2. Run Yi-1.5 models. For more Yi models supported by Ollama, see [Yi tags](https://ollama.com/library/yi/tags).
-     
+   
     ```python
     ollama run yi:v1.5
     ```
@@ -200,6 +200,10 @@ Yi APIs are OpenAI-compatible and provided at [Yi Platform](https://platform.lin
 ## License
 
 The code and weights of the Yi-1.5 series models are distributed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE).
+
+If you create derivative works based on this model, please include the following attribution in your derivative works:
+
+    This work is a derivative of [The Yi Series Model You Base On] by 01.AI, used under the Apache 2.0 License.
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
