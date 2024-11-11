@@ -60,7 +60,9 @@ Yi-1.5 comes in 3 model sizes: 34B, 9B, and 6B. For model details and benchmarks
 
 ## Quick Start
 
-This tutorial runs Yi-1.5-34B-Chat locally on an A800 (80G).If you want more inference refer to the [Cookbook](https://github.com/01-ai/Yi/tree/main/Cookbook)
+This tutorial runs Yi-1.5-34B-Chat locally on an A800 (80G).
+
+> **💡 Tip**: If you want to get started with the Yi model and explore different methods for inference, check out the [Yi Cookbook](https://github.com/01-ai/Yi/tree/main/Cookbook).
 
   ```python
   from transformers import AutoModelForCausalLM, AutoTokenizer
